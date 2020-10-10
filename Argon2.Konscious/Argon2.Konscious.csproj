@@ -11,4 +11,8 @@
     <PackageReference Include="Konscious.Security.Cryptography.Argon2" Version="1.2.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Argon2.Shared\Argon2.Commons.csproj" />
+  </ItemGroup>
+
 </Project>

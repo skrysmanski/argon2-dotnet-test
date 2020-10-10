@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Security.Cryptography;
 using System.Text;
 
-using JetBrains.Annotations;
+using Argon2.Commons;
 
 using Sodium;
 
@@ -12,7 +11,7 @@ namespace Argon2.LibSodium
     {
         private static void Main()
         {
-            var salt = CreateSalt(16);
+            var salt = SaltProvider.CreateNonRandomSalt(16);
             var hashedPassword = HashPassword("Hello, World!", salt, byteLength: 40);
 
             Console.WriteLine(BitConverter.ToString(hashedPassword));
@@ -28,17 +27,6 @@ namespace Argon2.LibSodium
                 byteLength,
                 PasswordHash.ArgonAlgorithm.Argon_2ID13
             );
-        }
-
-        [MustUseReturnValue]
-        private static byte[] CreateSalt(int saltLength)
-        {
-            using var rngCryptoServiceProvider = new RNGCryptoServiceProvider();
-
-            var salt = new byte[saltLength];
-            rngCryptoServiceProvider.GetBytes(salt);
-
-            return salt;
         }
     }
 }
