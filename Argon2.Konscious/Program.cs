@@ -11,7 +11,7 @@ namespace Argon2.Konscious
     {
         private static void Main()
         {
-            var salt = SaltProvider.CreateNonRandomSalt(16);
+            var salt = SaltProvider.CreateRandomSalt(16);
             var hashedPassword = HashPassword("Hello, World!", salt, byteLength: 40);
 
             Console.WriteLine(BitConverter.ToString(hashedPassword));
