@@ -38,11 +38,11 @@ namespace Argon2.Konscious
 
             argon2.Salt = salt;
             argon2.DegreeOfParallelism = 8; // 8 = max CPU usage on CPU with 4 cores and hyper threading
-            argon2.MemorySize = 130; // MB
+            argon2.MemorySize = 150_000; // kB
 
-            // This gives about 0.6 hashes per second on a Raspberry Pi 4 and about
-            // 9 hashes per second on a medium desktop CPU.
-            argon2.Iterations = 1000;
+            // This gives about 0.3 hashes per second on a Raspberry Pi 4 and about
+            // 4 hashes per second on a medium desktop CPU.
+            argon2.Iterations = 2;
 
             return argon2.GetBytes(byteLength);
         }
