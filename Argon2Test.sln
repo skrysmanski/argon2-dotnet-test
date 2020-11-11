@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Argon2.Konscious", "Argon2.Konscious\Argon2.Konscious.csproj", "{5DE67415-AF01-404B-8F48-20210C19AEC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Argon2.Konscious", "Argon2.Konscious\Argon2.Konscious.csproj", "{5DE67415-AF01-404B-8F48-20210C19AEC5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9D23F63D-C6A4-430C-8BAC-3F92EEA8F05F}"
 	ProjectSection(SolutionItems) = preProject
@@ -13,9 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Project.Tests.props = Project.Tests.props
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Argon2.LibSodium", "Argon2.LibSodium\Argon2.LibSodium.csproj", "{41C43486-D8AF-4B05-B47F-9D13A6375099}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Argon2.Commons", "Argon2.Shared\Argon2.Commons.csproj", "{EE4E4033-5598-4051-B368-487D414843E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Argon2.Commons", "Argon2.Shared\Argon2.Commons.csproj", "{EE4E4033-5598-4051-B368-487D414843E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,10 +25,6 @@ Global
 		{5DE67415-AF01-404B-8F48-20210C19AEC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DE67415-AF01-404B-8F48-20210C19AEC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DE67415-AF01-404B-8F48-20210C19AEC5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{41C43486-D8AF-4B05-B47F-9D13A6375099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{41C43486-D8AF-4B05-B47F-9D13A6375099}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{41C43486-D8AF-4B05-B47F-9D13A6375099}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{41C43486-D8AF-4B05-B47F-9D13A6375099}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EE4E4033-5598-4051-B368-487D414843E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EE4E4033-5598-4051-B368-487D414843E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE4E4033-5598-4051-B368-487D414843E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
