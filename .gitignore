@@ -4,4 +4,6 @@
 **/obj/
 *.user
 _ReSharper.Caches/
+*.nupkg
+
 publish/
